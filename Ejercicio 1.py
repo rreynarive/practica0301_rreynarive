@@ -17,7 +17,7 @@ def fibonacci_bucle(n):
     return a
 
 start_time = datetime.datetime.now()
-fibonacci_recursiva(30)
+fibonacci_recursiva(1)
 end_time = datetime.datetime.now()
 
 print("El tiempo de ejercucion es:", end_time - start_time)

@@ -1,19 +1,13 @@
-import cProfile
 import csv
-def personas50():
-    with open("50.csv", r) as file:
-        print(file.read())
+import cProfile
 
+def personas50(archivo):
+    file = open(archivo, "r")
+    lineas = file.readlines()
+    file.close()
+    claves = lineas[0][:-1].split(";")
+    return print(claves)
 
-def fibonacci_bucle(n):
-    a = 0
-    b = 1
-    for k in range(n):
-        c = b + a
-        a = b
-        b = c
-    return a
-
-cProfile.run("fibonacci_recursiva(3)")
-
-
+archivo = C:\Users\usuario01\Downloads\personas.csv
+print(personas50(archivo))
+cProfile.run("persona50()")

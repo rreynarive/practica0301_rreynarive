@@ -1,10 +1,8 @@
 import cProfile
-def fibonacci_recursiva(n):
-    if n == 0:
-        return 0
-    if n == 1:
-        return 1
-    return fibonacci_recursiva(n - 1) + fibonacci_recursiva(n - 2)
+import csv
+def personas50():
+    with open("50.csv", r) as file:
+        print(file.read())
 
 
 def fibonacci_bucle(n):
